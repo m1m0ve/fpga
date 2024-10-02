@@ -1,0 +1,32 @@
+demo_projects/
+
+# Ignore nextpnr-xilinx directory
+nextpnr-xilinx/
+
+# Ignore misc/bsdl directory
+misc/bsdl/
+
+# Ignore env directory
+env/
+
+# Ignore .bit files
+*.bit
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore common OS and editor files
+.DS_Store
+.vscode/
+*.swp
+*~
+
+# Ignore large files
+blinky-digilent-arty/xc7a35tcsg324.bba
+misc/chipdb/xc7a100tcsg324.bin
+
+# Ignore all .bba and .bin files (optional, uncomment if needed)
+# *.bba
+# *.bin
+
+# Add any other files or directories you want to ignore
