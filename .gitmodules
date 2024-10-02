@@ -1,0 +1,3 @@
+[submodule "twitchcore"]
+	path = twitchcore
+	url = https://github.com/geohot/twitchcore

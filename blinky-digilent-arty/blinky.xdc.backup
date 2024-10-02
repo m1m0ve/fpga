@@ -1,0 +1,24 @@
+# Clock signal
+set_property LOC E3 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+
+# LED pins
+set_property LOC H5 [get_ports {led[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+set_property LOC J5 [get_ports {led[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
+set_property LOC T9 [get_ports {led[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
+set_property LOC T10 [get_ports {led[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
+
+# RGB LED pins
+set_property LOC E1 [get_ports led0_b]
+set_property IOSTANDARD LVCMOS33 [get_ports led0_b]
+set_property LOC F6 [get_ports led0_g]
+set_property IOSTANDARD LVCMOS33 [get_ports led0_g]
+set_property LOC G6 [get_ports led0_r]
+set_property IOSTANDARD LVCMOS33 [get_ports led0_r]
+
+# Create clock
+create_clock -period 100.000 -name sys_clk_pin -waveform {0.000 50.000} -add [get_ports clk]
